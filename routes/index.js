@@ -49,7 +49,7 @@ module.exports = function (app) {
   app.get('/reg', checkNotLogin);
   app.get('/reg', function (req, res, next) {
     res.render('reg', {
-      title: '注册',
+      title: '注 册',
       user: req.session.user,
       flash: req.flash('info').toString()
     });
