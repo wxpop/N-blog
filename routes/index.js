@@ -16,7 +16,7 @@ function checkLogin(req, res, next) {
 
 function checkNotLogin(req, res, next) {
   if (req.session.user) {
-    req.flash('info', '登录成功!');
+    req.flash('info', '成功!');
     return res.redirect('back');
   }
   next();
