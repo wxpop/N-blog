@@ -64,7 +64,7 @@ module.exports = function (app) {
     var email = body.email;
 
     if (password_re !== password) {
-      req.flash('info', '两次输入的密码不一致!');
+      req.flash('info', '两  次输入的密码不一致!');
       return res.redirect('/reg');
     }
 
